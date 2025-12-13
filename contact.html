@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+</body>
+</html>
+<header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Anish Neupane</a>
+
+      <nav aria-label="Primary navigation">
+        <!-- Desktop menu -->
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="project.html"aria-current="page">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="videoDemo.html">Video Demo</a>
+          <a href="sitereport.html">Site Report</a>
+        </div>
+
+        <!-- Mobile hamburger (CSS-only toggle) -->
+        <input class="nav-toggle" type="checkbox" id="nav-toggle">
+        <label class="hamburger" for="nav-toggle" aria-label="Open menu">
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </label>
+
+        <!-- Mobile menu panel -->
+        <div class="mobile-panel">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="project.html"aria-current="page">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="videoDemo.html">Video Demo</a>
+          <a href="sitereport.html">Site Report</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+  <section class="card">
+    <h1>Contact</h1>
+    <p>
+      This page contains my contact information and a form that opens the
+      user’s email application using <strong>mailto</strong>, as required
+      for this module.
+    </p>
+
+    <form class="card"
+          action="mailto:anish@example.com"
+          method="post"
+          enctype="text/plain">
+
+      <label for="name">Name</label><br>
+      <input id="name" name="name" type="text" required
+             style="width:100%; padding:10px; border-radius:12px;
+                    border:1px solid rgba(255,255,255,0.12);
+                    background:rgba(255,255,255,0.04); color:#e8eef6;">
+      <br><br>
+
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" required
+             style="width:100%; padding:10px; border-radius:12px;
+                    border:1px solid rgba(255,255,255,0.12);
+                    background:rgba(255,255,255,0.04); color:#e8eef6;">
+      <br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required
+                style="width:100%; padding:10px; border-radius:12px;
+                       border:1px solid rgba(255,255,255,0.12);
+                       background:rgba(255,255,255,0.04); color:#e8eef6;">
+      </textarea>
+      <br><br>
+
+      <button type="submit"
+              style="padding:10px 14px; border-radius:12px;
+                     border:1px solid rgba(78,161,255,0.35);
+                     background:rgba(78,161,255,0.18);
+                     color:#e8eef6; cursor:pointer;">
+        Open Email App
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© 2025 Anish Neupane</div>
+</footer>
